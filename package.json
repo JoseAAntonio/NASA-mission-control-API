@@ -1,0 +1,29 @@
+{
+	"name": "nasa_mission_project",
+	"version": "1.0.0",
+	"description": "project from ZTM on Node js and Express js for building a full stack app focusing on the back end for NASA mission control application",
+	"main": "index.js",
+	"scripts": {
+		"install-server": "npm install --prefix server:",
+		"install-client": "npm install --prefix client:",
+		"install": "npm run install-server && npm run install-client",
+		"server": "npm run watch --prefix server",
+		"client": "npm start --prefix client",
+		"start": "concurrently \"npm run server\" \"npm run client\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JoseAAntonio/NASA-mission-control-API.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JoseAAntonio/NASA-mission-control-API/issues"
+	},
+	"homepage": "https://github.com/JoseAAntonio/NASA-mission-control-API#readme",
+	"devDependencies": {
+		"concurrently": "^7.6.0"
+	}
+}
